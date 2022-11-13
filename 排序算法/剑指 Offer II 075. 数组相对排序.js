@@ -12,9 +12,9 @@ var relativeSortArray = function (arr1, arr2) {
       statMap.set(arr1El, statValue + 1);
     } else {
       otherSortedArr.push(arr1El);
-      otherSortedArr.sort((a, b) => a - b);
     }
   }
+  otherSortedArr.sort((a, b) => a - b);
   return parseStatMapToArray(statMap).concat(otherSortedArr);
 };
 
